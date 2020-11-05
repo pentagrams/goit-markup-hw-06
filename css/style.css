@@ -224,6 +224,11 @@ svg {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.link a {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .link a:hover,
 .link a:focus {
   color: var(--color-blue);
@@ -546,7 +551,8 @@ svg {
   margin-top: 50px;
 }
 
-.customers-list li {
+.customers-list li,
+.customers-list li svg {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -559,17 +565,17 @@ svg {
   height: 90px;
   border-radius: 4px;
   border: 1px solid var(--color-white-gray);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-list li:hover,
-.customers-list li:hover svg,
+.customers-list li a:hover svg,
 .customers-list li a:focus svg {
   fill: var(--color-blue);
 }
 
 .customers-list li a:focus,
 .customers-list li a:hover {
-  fill: var(--color-blue);
   border: 1px solid var(--color-blue);
 }
 
