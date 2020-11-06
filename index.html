@@ -412,11 +412,21 @@
 					<textarea class="form-comments" name="comments" id="text" placeholder="Введите текст"></textarea>
 				</div>
 
-				<div class="form-field form-field-checkbox">
-					<input class="form-input" type="checkbox" name="" id="modal-form-checkbox">
-					<label class="form-label-checkbox" for="modal-form-checkbox">Соглашаюсь с рассылкой и принимаю <a
-							href="#" class="checkbox-link">Условия
-							договора</a></label>
+				<div class="form-field">
+
+					<label class="form-label-checkbox" for="modal-form-checkbox">
+						<input class="form-input-checkbox " type="checkbox" name="terms_of_use"
+							id="modal-form-checkbox">
+
+						<svg class="form-input-checkbox__icon">
+							<use href="./images/svg/sprite-check.svg#icon-icon_check"></use>
+						</svg>
+						<p>
+							Соглашаюсь с рассылкой и принимаю
+							<a href="#" class="checkbox-link">Условия
+								договора</a>
+						</p>
+					</label>
 				</div>
 
 				<button class="button submit-button" type="submit">Отправить</button>
